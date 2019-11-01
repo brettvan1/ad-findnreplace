@@ -17,11 +17,11 @@ import-module activedirectory
 
 cls
 
-$old=read-host "Enter in the old computer name."
+$old=read-host "Enter in the old computer name:  "
 
-$targetcmp=read-host "Enter in new computer name.  This is one you want to replace the old one in AD space."
+$targetcmp=read-host "Enter in new computer name.  This is one you want to replace the old one in AD space:  "
 
-$y=read-host "Do you want to move this $old computer object to the $targetcmp location? Press y to continue..."
+$y=read-host "Do you want to move this $old computer object to this $targetcmp location in AD? Press y to continue:  "
 
 if($y -like "y"){
 
